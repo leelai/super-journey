@@ -1,1 +1,1 @@
-var e="/vue-vben-admin/assets/header.1b5fa5f8.jpg";export{e as h};
+var a="//assets/header.1b5fa5f8.jpg";export{a as h};
