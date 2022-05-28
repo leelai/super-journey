@@ -97,9 +97,9 @@ jobs:
           git config --local user.email "vbenadmin@163.com"
           git config --local user.name "vbenAdmin"
 
-      - name: Delete gh-pages branch
-        run: |
-          git push origin --delete gh-pages
+      # - name: Delete gh-pages branch
+      #   run: |
+      #     git push origin --delete gh-pages
 
       - name: Build
         run: |
@@ -109,10 +109,7 @@ jobs:
           cp dist/index.html dist/404.html
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
-          ACTIONS_DEPLOY_KEY: ${{secrets.ACTIONS_DEPLOY_KEY}}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./dist
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          forceOrphan: true
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./dist
