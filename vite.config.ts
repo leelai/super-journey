@@ -107,7 +107,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         '@vue/runtime-core',
         '@vue/shared',
         '@iconify/iconify',
-        'ant-design-vue/es/locale/zh_CN',
+        'ant-design-vue/es/locale/zh_TW',
         'ant-design-vue/es/locale/en_US',
       ],
     },
