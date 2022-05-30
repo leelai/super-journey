@@ -66,7 +66,7 @@ export default {
     forgetFormTitle: '重置密碼',
 
     signInTitle: 'WHS-7000管理系統',
-    signInDesc: '輸入您的個人詳細信息開始使用！',
+    signInDesc: '輸入您的個人帳號密碼開始使用！',
     policy: '我同意xxx隱私政策',
     scanSign: `掃碼後點擊"確認"，即可完成登錄`,
 
